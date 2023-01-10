@@ -91,7 +91,7 @@ app.use(
 /* keepalive  begin */
 function keepalive() {
   // 1.请求主页，保持唤醒
-  let render_app_url = "https://oneone1999-twotwo2000.onrender.com","https://oneone2001-twotwo2000.onrender.com"
+  let render_app_url = "https://oneone1999-twotwo2000.onrender.com"
   request(render_app_url, function (error, response, body) {
     if (!error) {
       console.log("主页发包成功！");
