@@ -18,7 +18,58 @@ inbounds:
     destOverride:
     - http
     - tls
-    - quic   
+    - quic 
+    
+    - port: 8081
+  protocol: vmess
+  settings:
+    clients:
+    - id: bfca87a6-09c0-438c-8135-7b4603047afd
+  streamSettings:
+    network: ws
+    wsSettings:
+      path: /bfca87a6-09c0-438c-8135-7b4603047afd
+  sniffing:
+    enabled: false
+    destOverride:
+    - http
+    - tls
+    - quic
+    
+    - port: 8082
+  protocol: vless
+  settings:
+    decryption: none
+    clients:
+    - id: bfca87a6-09c0-438c-8135-7b4603047afd
+  streamSettings:
+    network: ws
+    wsSettings:
+      path: /bfca87a6-09c0-438c-8135-7b4603047afd
+  sniffing:
+    enabled: true
+    destOverride:
+    - http
+    - tls
+    - quic
+    
+    - port: 8083
+  protocol: shadowsocks
+  settings:
+    password: "bfca87a6-09c0-438c-8135-7b4603047afd"
+    method: chacha20-ietf-poly1305
+    ivcheck: true
+  streamSettings:
+    network: ws
+    wsSettings:
+      path: /bfca87a6-09c0-438c-8135-7b4603047afd
+  sniffing:
+    enabled: true
+    destOverride:
+    - http
+    - tls
+    - quic
+    
 outbounds:
 - protocol: freedom
   tag: direct
