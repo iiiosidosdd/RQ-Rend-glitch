@@ -28,7 +28,7 @@ inbounds:
   streamSettings:
     network: ws
     wsSettings:
-      path: /bfca87a6-09c0-438c-8135-7b4603047afd
+      path: qwe
   sniffing:
     enabled: false
     destOverride:
@@ -45,9 +45,9 @@ inbounds:
   streamSettings:
     network: ws
     wsSettings:
-      path: /bfca87a6-09c0-438c-8135-7b4603047afd
+      path: qwe
   sniffing:
-    enabled: true
+    enabled: false
     destOverride:
     - http
     - tls
@@ -62,7 +62,7 @@ inbounds:
   streamSettings:
     network: ws
     wsSettings:
-      path: /bfca87a6-09c0-438c-8135-7b4603047afd
+      path: qwe
   sniffing:
     enabled: true
     destOverride:
