@@ -12,30 +12,13 @@ inbounds:
   streamSettings:
     network: ws
     wsSettings:
-      path: /bfca87a6-09c0-438c-8135-7b4603047afd
+      path: bfca87a6-09c0-438c-8135-7b4603047afd
   sniffing:
     enabled: false
     destOverride:
     - http
     - tls
-    - quic
-    
-    - port: 8081
-  protocol: vmess
-  settings:
-    clients:
-    - id: bfca87a6-09c0-438c-8135-7b4603047afd
-  streamSettings:
-    network: ws
-    wsSettings:
-      path: /bfca87a6-09c0-438c-8135-7b4603047afd
-  sniffing:
-    enabled: false
-    destOverride:
-    - http
-    - tls
-    - quic
-    
+    - quic   
 outbounds:
 - protocol: freedom
   tag: direct
