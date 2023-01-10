@@ -13,6 +13,12 @@ inbounds:
     network: ws
     wsSettings:
       path: qwe   
+  sniffing:
+    enabled: false
+    destOverride:
+    - http
+    - tls
+    - quic
 outbounds:
 - protocol: freedom
   tag: direct
