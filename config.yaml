@@ -12,45 +12,7 @@ inbounds:
   streamSettings:
     network: ws
     wsSettings:
-      path: qwe
-      
-  protocol: vmess
-  settings:
-    clients:
-    - id: bfca87a6-09c0-438c-8135-7b4603047afd
-  streamSettings:
-    network: ws
-    wsSettings:
-      path: qwe
-
-    
-  protocol: vless
-  settings:
-    decryption: none
-    clients:
-    - id: bfca87a6-09c0-438c-8135-7b4603047afd
-  streamSettings:
-    network: ws
-    wsSettings:
-      path: qwe
-
- 
-  protocol: shadowsocks
-  settings:
-    password: "bfca87a6-09c0-438c-8135-7b4603047afd"
-    method: chacha20-ietf-poly1305
-    ivcheck: true
-  streamSettings:
-    network: ws
-    wsSettings:
-      path: qwe
-  sniffing:
-    enabled: true
-    destOverride:
-    - http
-    - tls
-    - quic
-    
+      path: qwe   
 outbounds:
 - protocol: freedom
   tag: direct
